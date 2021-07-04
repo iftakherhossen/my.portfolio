@@ -1,0 +1,72 @@
+body {
+    font-family: 'Kalam', 'cursive';
+    margin: 0;
+}
+.first-page {
+    background-image: url(images/top-banner.png);
+    background-size: cover;
+}
+.flex-container {
+    display: flex;
+}
+.half-width {
+    width: 45%;
+    padding: 25px;
+}
+.margin-lft  {
+    margin-left: 100px;
+    text-decoration: none;
+}
+.title-h1 {
+    font-size: 50px;
+    margin: 100px 0 0;
+}
+.colored-h1 {
+    color: tomato;
+}
+.hireme-btn {
+    background-image: linear-gradient(to right, #3c94f9, #23c2e0);
+    color: black;
+    padding: 8px 20px;
+    box-shadow: 1px 2px 5px #888888;
+    text-decoration: none;
+}
+.half-width img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    margin-bottom: 40px;
+}
+.second-page {
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.my-skills {
+    margin-top: 80px;
+}
+.heading-h1 {
+    font-size: 40px;
+}
+.light-txt {
+    font-size: 22px;
+    color: gray;
+    cursor: none;
+}
+li {
+    font-size: 25px;
+}
+li:hover{
+    color: #ff1f77;
+    text-transform: uppercase;
+}
+.resume-btn {
+    background-image: linear-gradient(to right, #6E44DA, #5864de);
+    color: white;
+    padding: 8px 20px;
+    box-shadow: 1px 2px 5px #888888;
+    text-decoration: none;
+    box-shadow: inset;
+}
