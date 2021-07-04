@@ -60,7 +60,7 @@ li {
 }
 li:hover{
     color: #ff1f77;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 .resume-btn {
     background-image: linear-gradient(to right, #6E44DA, #5864de);
