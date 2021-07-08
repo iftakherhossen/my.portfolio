@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Kalam', 'cursive';
     margin: 0;
@@ -19,7 +22,7 @@ body {
 }
 .title-h1 {
     font-size: 50px;
-    margin: 100px 0 0;
+    margin: 115px 0 0;
 }
 .colored-h1 {
     color: tomato;
@@ -68,27 +71,61 @@ li:hover{
     padding: 8px 20px;
     box-shadow: 1px 2px 5px #888888;
     text-decoration: none;
-    box-shadow: inset;
+}
+.container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.project {
+    width: 250px;
+    height: 180px;
+    background-color: #5864de;
+    margin: 10px;
+    position: relative;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.project:hover .overlay {
+    opacity: 1;
 }
 .third-page {
     background-image: url(images/exp-bg.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
 }
 .h1-center {
     font-size: 40px;
     text-align: center;
+    color: whitesmoke;
 }
 #border-css {
     border-left: 7px solid;
-    border-image: linear-gradient(purple, tomato);
-    /* border-image-slice: 1; */
+    border-image: linear-gradient(salmon, tomato);
+    border-image-slice: 1;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 1px 2px 5px #888888;
 }
 .experience-item {
     padding: 0 25px 20px;
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+    margin-top: 25px;
+    /* border-radius: 15px; */
 }
 h2 {
     font-size: 35px;
