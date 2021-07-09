@@ -9,6 +9,23 @@ body {
     background-image: url(images/top-banner.png);
     background-size: cover;
 }
+.nav-menu {
+    text-align: center;
+    padding: 12px;
+    font-size: 19px;
+}
+.nav-menu a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    border: 2px solid transparent;
+    padding: 5px 8px;
+    border-radius: 20px;
+}
+.nav-menu a:hover {
+    border: 2px solid tomato;
+    box-shadow: 2px 2px 2px goldenrod;
+}
 .flex-container {
     display: flex;
 }
@@ -22,7 +39,7 @@ body {
 }
 .title-h1 {
     font-size: 50px;
-    margin: 115px 0 0;
+    margin: 55px 0 0;
 }
 .colored-h1 {
     color: tomato;
@@ -39,7 +56,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 65px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 .second-page {
@@ -72,45 +89,89 @@ li:hover{
     box-shadow: 1px 2px 5px #888888;
     text-decoration: none;
 }
+.project-heading h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 5%;
+}
 .container {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-.project {
-    width: 250px;
-    height: 180px;
-    background-color: #5864de;
-    margin: 10px;
+.box{
     position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: #998cec;
+    margin: 15px;  
 }
 .overlay {
     position: absolute; 
     bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1; 
+    color: white; 
     width: 100%;
-    transition: .5s ease;
-    opacity: 1;
-    color: white;
-    font-size: 20px;
+    transition: .5s ease-in;
+    opacity: 0;
+    font-size: 30px;
     padding: 20px;
     text-align: center;
+    height: 70%;
+    margin-top: 50%;
+    animation: glow 2s ease-in-out infinite alternate;
 }
-.project:hover .overlay {
-    opacity: 1;
+.box:hover .overlay {
+    opacity: 0.8;
 }
-.third-page {
+.left-btn {
+    width: 50px;
+    height: 50px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    border: 0;
+    border-radius: 50%;
+    float: left;
+    margin-left: 25px;
+    box-shadow: 3px 3px 3px #575656;
+}
+.left-btn:hover {
+    background-color: #5864de;
+    color: white;
+    border-color: white;
+}
+.right-btn {
+    width: 50px;
+    height: 50px;
+    padding-left: 7px;
+    padding-bottom: 3px;
+    border: 0;
+    border-radius: 50%;
+    float: right;
+    margin-right: 25px;
+    box-shadow: 3px 3px 3px #575656;
+}
+.right-btn:hover {
+    border-color: white;
+    background-color: #5864de;
+    color: white;
+}
+hr {
+    width: 90%;
+    height: 2px;
+    color: black;
+    top: 25px;
+}
+.experience {
     background-image: url(images/exp-bg.png);
     background-repeat: no-repeat;
     background-position: top;
 }
-.h1-center {
+.h1-center h1 {
     font-size: 40px;
     text-align: center;
     color: whitesmoke;
+    margin-top: 4.5%;
 }
 #border-css {
     border-left: 7px solid;
@@ -123,9 +184,8 @@ li:hover{
     padding: 0 25px 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
-    margin-top: 25px;
-    /* border-radius: 15px; */
+    width: 40%;
+    margin-top: 6%;
 }
 h2 {
     font-size: 35px;
@@ -135,6 +195,6 @@ h3 {
     color: tomato;
 }
 footer p {
-    margin-top: 9.5%;
+    margin-top: 4.95%;
     text-align: center;margin-bottom: 0;
 }
